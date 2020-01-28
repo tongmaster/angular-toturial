@@ -10,9 +10,12 @@ export class EventBindingComponent implements OnInit {
 
   ngOnInit() {}
   books: Array<string> = new Array<string>();
-  book: string = "";
+  book: string = "test";
   add() {
     this.books.push(this.book);
     this.book = "";
+  }
+  showMessage(){
+    return this.book
   }
 }
